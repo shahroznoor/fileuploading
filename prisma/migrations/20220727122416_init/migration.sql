@@ -1,0 +1,16 @@
+-- CreateTable
+CREATE TABLE `File` (
+    `id` VARCHAR(191) NOT NULL,
+    `filename` VARCHAR(191) NOT NULL DEFAULT '',
+    `path` VARCHAR(191) NOT NULL DEFAULT '',
+    `mimetype` VARCHAR(191) NOT NULL DEFAULT '',
+    `size` INTEGER NOT NULL DEFAULT 0,
+    `encoding` VARCHAR(191) NOT NULL DEFAULT '',
+    `destination` VARCHAR(191) NOT NULL DEFAULT '',
+    `fieldname` VARCHAR(191) NOT NULL DEFAULT '',
+    `originalname` VARCHAR(191) NOT NULL DEFAULT '',
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
